@@ -46,18 +46,18 @@ namespace PadawansTask13
         }
         public string Get_Employee_Information()
         {
-            return "Surname: {" + this._Surname + "}, Age: {" + this._Age + "}";
+            return ("Surname: " + this._Surname + ", Age: " + this._Age);
         }
         public string Set_New_Surname_And_Get_Employee_Info(string surname)
         {
             this._Surname = surname;
-            return "Surname: {" + this._Surname + "}, Age: {" + this._Age + "}";
-        }
+            return ("Surname: "+this._Surname+", Age: "+this._Age);
+        }       //   Surname: Ivanov, Age: 25
         private string Private_Method_With_String_Return_Type()
         {
             Employee em = new Employee();
             
-            return em.GetType().ToString(); ;
+            return em.GetType().ToString();
         }
     }
 }
